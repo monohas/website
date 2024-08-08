@@ -19,27 +19,27 @@ const MenuModal: React.FC<MenuModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const menuItems: MenuItem[] = [
-    { name: "News", path: "/news" },
+    { name: "discography", path: "/discography" },
     { name: "Profile", path: "/profile" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
-      <div 
-        className={styles.modalContent} 
+      <div
+        className={styles.modalContent}
         onClick={(e) => e.stopPropagation()}
         style={{ backgroundColor: getColor("primary") }}
       >
         <ul className={styles.menuList}>
           {menuItems.map((item, index) => (
             <li key={index} className={styles.menuItem}>
-              <Link 
+              <Link
                 href={item.path}
                 onClick={onClose}
-                style={{ 
+                style={{
                   color: getColor("secondary"),
-                  textDecoration: 'none'
+                  textDecoration: "none",
                 }}
               >
                 {item.name}
@@ -47,8 +47,8 @@ const MenuModal: React.FC<MenuModalProps> = ({ isOpen, onClose }) => {
             </li>
           ))}
         </ul>
-        <button 
-          className={styles.closeButton} 
+        <button
+          className={styles.closeButton}
           onClick={onClose}
           style={{ color: getColor("secondary") }}
         >

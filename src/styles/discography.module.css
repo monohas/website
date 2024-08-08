@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* .header-nav {} */
+.navlist {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding: 10px;
+    z-index: 1000;
+}
+/* .header-navitem {} */
+.navitem {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.title{
+  top: 100px;
+}
+.body {
+  background-image:
+    radial-gradient(#e0184d 30%, transparent 10%);
+  background-size: 8px 8px;
+}

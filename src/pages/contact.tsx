@@ -22,8 +22,7 @@ export default function Home({}) {
           color: getColor("primary"),
         }}
         className={styles.container}
-      >
-      </div>
+      ></div>
       <Footer />
     </>
   );

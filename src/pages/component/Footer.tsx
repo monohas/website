@@ -1,16 +1,16 @@
-import React from 'react';
-import styles from './Footer.module.css';
-import { useTheme } from '../../contexts/ThemeContext';
+import React from "react";
+import styles from "./Footer.module.css";
+import { useTheme } from "../../contexts/ThemeContext";
 
 const Footer: React.FC = () => {
   const { getColor } = useTheme();
 
   return (
-    <footer 
+    <footer
       className={styles.footer}
-      style={{ 
+      style={{
         backgroundColor: getColor("primary"),
-        color: getColor("secondary")
+        color: getColor("secondary"),
       }}
     >
       <p>&copy; 2024 モノハス. All rights reserved.</p>

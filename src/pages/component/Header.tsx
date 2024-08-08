@@ -6,9 +6,8 @@ import {
   FaSpotify,
   FaBandcamp,
 } from "react-icons/fa";
-import { PiHamburger } from "react-icons/pi";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { TfiAlignRight } from "react-icons/tfi";
 import { SiApplemusic } from "react-icons/si";
 import { ImSoundcloud } from "react-icons/im";
 import styles from "./Header.module.css";
@@ -79,7 +78,7 @@ const Header: React.FC = () => {
           }}
           onClick={toggleMenu}
         >
-          <RxHamburgerMenu size={iconSize} />
+          <TfiAlignRight size={iconSize} />
         </button>
       </nav>
       <MenuModal isOpen={isMenuOpen} onClose={toggleMenu} />
