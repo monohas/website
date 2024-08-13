@@ -1,12 +1,14 @@
 @charset "utf-8";
-
 /* 
 Base style
 */
 body {
     font-family: 'Comfortaa','Exo 2','Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #333;
     margin: 0;
+    padding: 0;
+    background-color: #18ebb0;
+    background-image:
+    radial-gradient(#e0184d 30%, transparent 15%);
+    background-size: 8px 8px;
+    color: #e0184d;
 }

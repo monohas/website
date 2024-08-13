@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./MenuModal.module.css";
+import { IoCloseOutline } from "react-icons/io5";
 import { useTheme } from "../../contexts/ThemeContext";
 
 interface MenuModalProps {
@@ -20,8 +21,8 @@ const MenuModal: React.FC<MenuModalProps> = ({ isOpen, onClose }) => {
 
   const menuItems: MenuItem[] = [
     { name: "discography", path: "/discography" },
-    { name: "Profile", path: "/profile" },
-    { name: "Contact", path: "/contact" },
+    { name: "profile", path: "/profile" },
+    { name: "contact", path: "/contact" },
   ];
 
   return (
@@ -52,7 +53,7 @@ const MenuModal: React.FC<MenuModalProps> = ({ isOpen, onClose }) => {
           onClick={onClose}
           style={{ color: getColor("secondary") }}
         >
-          Close
+          <IoCloseOutline size={29}/>
         </button>
       </div>
     </div>

@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 6%;
   width: 100%;
   position: fixed;
   left: 0;
-  z-index: 1000;
+  z-index: 150;
 }
 
 .nav {
@@ -19,8 +19,7 @@
 
 .socialLinks {
   display: flex;
-  top: 30;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .navLink {
@@ -36,6 +35,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding-right: 7%;
   margin-left: auto;
 }

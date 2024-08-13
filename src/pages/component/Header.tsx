@@ -37,6 +37,16 @@ const Header: React.FC = () => {
       ariaLabel: "YouTube",
       icon: FaYoutube,
     },
+    // {
+    //   href: "https://open.spotify.com/intl-ja/artist/2TFixHo19Etq8pB3CdqJof?si=cCdyOaF2TkKfAz1ydN6uJw",
+    //   ariaLabel: "Spotify",
+    //   icon: FaSpotify,
+    // },
+    // {
+    //   href: "https://music.apple.com/jp/artist/%E3%83%A2%E3%83%8E%E3%83%8F%E3%82%B9/1580673917",
+    //   ariaLabel: "Apple Music",
+    //   icon: SiApplemusic,
+    // },
   ];
 
   const toggleMenu = () => {
@@ -70,6 +80,7 @@ const Header: React.FC = () => {
             </a>
           ))}
         </div>
+
         <button
           className={styles.menuButton}
           style={{
@@ -78,7 +89,7 @@ const Header: React.FC = () => {
           }}
           onClick={toggleMenu}
         >
-          <TfiAlignRight size={iconSize} />
+          <RxHamburgerMenu size={iconSize} />
         </button>
       </nav>
       <MenuModal isOpen={isMenuOpen} onClose={toggleMenu} />

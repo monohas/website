@@ -1,17 +1,9 @@
-.container {
-  display: flex;
-  min-height: 100vh;
-  background-color: #fff ;
-  background-image:
-    radial-gradient(#e0184d 30%, transparent 10%);
-  background-size: 8px 8px;
-}
 .groupName {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 70px;
+  font-size: clamp(48px, calc(100vw / 6), 140px);
   font-weight: bold;
   display: block;
   width: 100%;
@@ -32,7 +24,7 @@
   height: 76%;
   z-index: 99;
 }
-.groupImage {
+.MUTA {
   position: absolute;
   top: 50%;
   left: 50%;
