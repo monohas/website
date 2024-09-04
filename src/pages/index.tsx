@@ -19,8 +19,8 @@ export default function Home({}) {
       >
         monohas!!
       </strong>
-      <Image className={styles.TT} src={TT} alt="TT" />
-      <Image className={styles.MUTA} src={MUTA} alt="MUTA" />
+      <Image className={styles.TT} src={TT} alt="TT" priority={true}/>
+      <Image className={styles.MUTA} src={MUTA} alt="MUTA" priority={true}/>
 
       <Footer />
     </>
