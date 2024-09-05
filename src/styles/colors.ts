@@ -16,6 +16,6 @@ export const colors = {
   info: "#b20068",
   light: "#b20068",
   dark: "#b20068",
-  };
+};
 
 export type ColorName = keyof typeof colors;

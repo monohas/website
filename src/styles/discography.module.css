@@ -38,3 +38,7 @@
   padding: 0 0;
   /* box-shadow: 0 0.1em 0 yellow; */
 }
+.backTop{
+  text-align:right;
+  margin-right: 1rem;
+}

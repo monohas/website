@@ -53,7 +53,7 @@ const MenuModal: React.FC<MenuModalProps> = ({ isOpen, onClose }) => {
           onClick={onClose}
           style={{ color: getColor("secondary") }}
         >
-          <IoCloseOutline size={29}/>
+          <IoCloseOutline size={29} />
         </button>
       </div>
     </div>
